@@ -1,0 +1,35 @@
+{
+  "name": "vite-plugin-node2string",
+  "private": false,
+  "version": "1.0.0",
+  "types": "./dist/type/index.d.ts",
+  "files": [
+    "dist",
+    "package.json"
+  ],
+  "main": "./dist/index.umd.js",
+  "module": "./dist/index.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.umd.js"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.23",
+    "typescript": "^4.5.4",
+    "vite": "^3.0.0",
+    "vite-plugin-dts": "^1.0.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fe-pixel/rpa-node"
+  },
+  "author": "xiaoai",
+  "license": "MIT"
+}
